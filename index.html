@@ -99,34 +99,43 @@
                 <div class="overflow-hidden rounded-2xl border border-gray-200 shadow-lg">
                     <table class="w-full text-left border-collapse">
                         <thead>
-                            <tr class="bg-gray-100 border-b border-gray-200">
-                                <th class="py-4 px-4 font-bold text-gray-700">対象月・項目</th>
-                                <th class="py-4 px-4 font-bold text-center text-joyfit-red">特別価格（税込）</th>
-                                <th class="py-4 px-4 font-bold text-center text-gray-400 hidden sm:table-cell">通常価格（税込）</th>
+                            <tr class="bg-gray-100 border-b border-gray-200 text-xs md:text-base">
+                                <th class="py-3 px-2 md:py-4 md:px-4 font-bold text-gray-700 whitespace-nowrap md:whitespace-normal">対象月・項目</th>
+                                <th class="py-3 px-2 md:py-4 md:px-4 font-bold text-center text-joyfit-red">
+                                    特別価格<span class="hidden md:inline">（税込）</span>
+                                    <div class="md:hidden text-[10px] text-joyfit-red font-normal">(税込)</div>
+                                </th>
+                                <th class="py-3 px-2 md:py-4 md:px-4 font-bold text-center text-gray-400">
+                                    通常価格<span class="hidden md:inline">（税込）</span>
+                                    <div class="md:hidden text-[10px] text-gray-400 font-normal">(税込)</div>
+                                </th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-xs md:text-base">
                             <tr class="border-b border-gray-100 bg-white">
-                                <td class="py-5 px-4 font-bold text-gray-800">2025年12月分</td>
-                                <td class="py-5 px-4 text-center font-black text-xl text-gray-900">日割り料金</td>
-                                <td class="py-5 px-4 text-center hidden sm:table-cell text-gray-400 line-through">日割り会費</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 font-bold text-gray-800">2025年12月分</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center font-black text-sm md:text-xl text-gray-900">日割り</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center text-gray-400 line-through text-[10px] md:text-base">日割り</td>
                             </tr>
                             <tr class="border-b border-gray-100 bg-red-50">
-                                <td class="py-5 px-4">
-                                    <div class="font-bold text-gray-800">2026年1月分 <span class="ml-2 inline-block bg-joyfit-red text-white text-[10px] px-2 py-0.5 rounded leading-none">復会特別</span></div>
+                                <td class="py-4 px-2 md:py-5 md:px-4">
+                                    <div class="font-bold text-gray-800">2026年1月分</div>
+                                    <span class="inline-block bg-joyfit-red text-white text-[9px] md:text-[10px] px-1.5 py-0.5 rounded leading-none mt-1">復会特別</span>
                                 </td>
-                                <td class="py-5 px-4 text-center font-black text-2xl text-joyfit-red">0円</td>
-                                <td class="py-5 px-4 text-center hidden sm:table-cell text-gray-400 line-through">9,350円</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center font-black text-lg md:text-2xl text-joyfit-red">0円</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center text-gray-400 line-through text-[10px] md:text-base">9,350円</td>
                             </tr>
                             <tr class="border-b border-gray-100 bg-red-50">
-                                <td class="py-5 px-4 font-bold text-gray-800">2月～6月分</td>
-                                <td class="py-5 px-4 text-center font-black text-2xl text-joyfit-red">3,400円/月</td>
-                                <td class="py-5 px-4 text-center hidden sm:table-cell text-gray-400 line-through">9,350円</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 font-bold text-gray-800">2月～6月分</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center font-black text-lg md:text-2xl text-joyfit-red">
+                                    3,400円<span class="text-xs md:text-lg font-bold">/月</span>
+                                </td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center text-gray-400 line-through text-[10px] md:text-base">9,350円</td>
                             </tr>
                             <tr class="bg-white">
-                                <td class="py-5 px-4 font-bold text-gray-800">入会金</td>
-                                <td class="py-5 px-4 text-center font-black text-2xl text-gray-900">0円</td>
-                                <td class="py-5 px-4 text-center hidden sm:table-cell text-gray-400 line-through">2,200円</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 font-bold text-gray-800">入会金</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center font-black text-lg md:text-2xl text-gray-900">0円</td>
+                                <td class="py-4 px-2 md:py-5 md:px-4 text-center text-gray-400 line-through text-[10px] md:text-base">2,200円</td>
                             </tr>
                         </tbody>
                     </table>
